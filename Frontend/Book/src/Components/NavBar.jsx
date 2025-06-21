@@ -4,7 +4,7 @@ import { Link } from 'react-router'
  const NavBar = () => {
    return (
      <>
-     <header className='bg-base-100 border-b border-base-content/15'>
+     <header className='mx-auto min-h-screen p-5  bg-zinc-950'>
         <div className='mx-auto max-w-6xl p-4'>
           <div className='flex items-center justify-between font-extrabold '>
             <h1 className='font-extrabold tracking-tighter text-3xl text-amber-100'>

@@ -20,7 +20,7 @@ const Notes = ({note,Notes}) => {
       }
   }
   return (
-    <div className='rounded-2xl card w-96 bg-base-100 card-sm shadow-sm'>
+    <div className='rounded-2xl card w-75 bg-base-100 card-sm shadow-sm '>
         <div className='card-body border-b-2 border-t-2 rounded-2xl text-accent '>
             <h3 className='card-title text-amber-100'>{note.title}</h3>
             <p className='line-clamp-3  text-amber-100'>{note.content}</p>
