@@ -10,9 +10,9 @@ app.use(cors());
 }
 dotenv.config();
 const mongoose = require("mongoose")
-const db = require("./db");
+const connect = require("./db");
 try{
-    db();
+    connect();
 }catch(error){
     console.log(error)
 }
