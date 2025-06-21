@@ -1,0 +1,8 @@
+@import "tailwindcss";
+/* Add this to src/index.css or your global CSS */
+.screen-border {
+  min-height: 100vh;
+  box-shadow: 0 0 0 8px rgba(59,130,246,0.3), 0 0 40px 8px rgba(59,130,246,0.4) inset;
+  border-radius: 18px;
+  padding: 0;
+}
