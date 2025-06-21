@@ -95,7 +95,7 @@ const NoteDetail = () => {
                                 </label>
                                 <textarea
                                     placeholder='Write a Note...'
-                                    className='input input-bordered w-100 min-h-60 p-3'
+                                    className='input input-bordered w-80 min-h-60 p-3'
                                     onChange={(e) => setnote({ ...note, content: e.target.value })}
                                 />
                                 <div className='card-actions justify-end mt-4'>

@@ -58,7 +58,7 @@ const CreatePage = () => {
                                 </label>
                                 <textarea
                                     placeholder='Write a Note...'
-                                    className='input input-bordered w-90 h-60 p-3'
+                                    className='input input-bordered w-80 h-60 p-3'
                                     value={content}
                                     onChange={e => setcontent(e.target.value)}
                                 />
