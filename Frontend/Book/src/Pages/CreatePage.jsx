@@ -32,7 +32,7 @@ const CreatePage = () => {
     };
 
     return (
-        <div className='min-h-screen bg-zinc-950'>
+        <div className='mx-auto min-h-screen p-5  bg-zinc-950'>
             <div className='mx-auto py-8 px-4'>
                 <div className="max-w-4xl mx-auto">
                     <Link to={"/"} className='gap-1 btn btn-accent text-zinc-950'>

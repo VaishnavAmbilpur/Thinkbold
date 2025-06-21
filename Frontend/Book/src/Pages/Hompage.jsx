@@ -32,7 +32,7 @@ const Hompage = () => {
      },[])
      useEffect(()=>{console.log("updated")},[Notes])
   return (
-    <div className='min-h-screen  bg-zinc-950'>
+    <div className='mx-auto min-h-screen p-5  bg-zinc-950'>
         <NavBar/>
         {ratelimit && < RateLimit/>}
        
