@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix Backend && npm @vitejs/plugin-react && npm install tailwindcss @tailwindcss/vite --prefix Frontend/Book && npm install --prefix Frontend/Book && npm run build --prefix Frontend/Book ",
+    "build": "npm install --prefix Backend && npm install tailwindcss @tailwindcss/vite --prefix Frontend/Book && npm install --prefix Frontend/Book && npm run build --prefix Frontend/Book ",
     "start" : "npm run start --prefix Backend"
   },
   "repository": {
