@@ -1,4 +1,4 @@
-# MERN Notes App 📝
+# THINKBOLD 📝
 
 A lightweight note-taking application built with MongoDB, Express, React, and Node.js. Create and manage notes without authentication.
 
