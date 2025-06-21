@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import formatCustomDate from '../lib/util'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import api from '../lib/axios'
 
 const Notes = ({note,Notes}) => {
   const handledelete = async(e,id)=>{
@@ -11,7 +12,7 @@ const Notes = ({note,Notes}) => {
       if(!window.confirm("Are you sure You want to delete")) return;
 
       try{
-         await axios.delete(`http://localhost:3000/api/notes/${id}`);
+         await api.delete(`/notes/${id}`);
          toast.success("Note Deleted Succcesfully")
          Notes((prev)=>prev.filter(note=> note._id !==id))
       }catch(err){

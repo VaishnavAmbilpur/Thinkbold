@@ -6,7 +6,7 @@ import Loader from '../Components/Loader';
 import { Link } from 'react-router';
 import { ArrowLeftIcon, DeleteIcon, Save, TractorIcon, Trash2Icon } from 'lucide-react';
 import toast from 'react-hot-toast';
-
+import api from '../lib/axios';
 const NoteDetail = () => {
   const [note,setnote] = useState({});
   const [loading,setloading] = useState(true);
@@ -17,7 +17,7 @@ const NoteDetail = () => {
   useEffect(()=>{
     const fetchNote = async()=>{
       try{
-      const response = await axios.get(`http://localhost:3000/api/notes/${id}`)
+      const response = await api.get(`/notes/${id}`)
       setnote(response.data);
       }catch(err){
         console.log(err);
@@ -32,7 +32,7 @@ const NoteDetail = () => {
     if(!window.confirm("Are you Sure You want to Delte"))return;
 
     try{
-      const res = await axios.delete(`http://localhost:3000/api/notes/${id}`);
+      const res = await api.delete(`/notes/${id}`);
       toast.success("You are Deleted the Note");
       navigate("/")
     }catch(err){
@@ -49,7 +49,7 @@ const NoteDetail = () => {
     setsaving(true);
 
     try {
-      const res = await axios.put(`http://localhost:3000/api/notes/${id}`, note);
+      const res = await api.put(`/notes/${id}`, note);
       toast.success("Note updated successfully");
       navigate("/");
     } catch (error) {
