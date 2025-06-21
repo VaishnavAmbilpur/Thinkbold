@@ -32,7 +32,7 @@ const Hompage = () => {
      },[])
      useEffect(()=>{console.log("updated")},[Notes])
   return (
-    <div className='mx-auto min-h-screen p-5  bg-zinc-950'>
+    <div className='mx-auto min-h-screen p-4  bg-zinc-950'>
         <NavBar/>
         {ratelimit && < RateLimit/>}
        
@@ -44,7 +44,7 @@ const Hompage = () => {
    </div>
 )}
         {!loading && !ratelimit && notes.length > 0 && (
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 text-amber-100'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-5 text-amber-100'>
             {notes.map(note => (
               <Notes key={note._id || note.id} note={note} Notes={setNotes}/>
             ))}
